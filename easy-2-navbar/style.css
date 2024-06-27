@@ -52,7 +52,7 @@ nav {
 				position: absolute;
 				top: 100%;
 				left: 50%;
-				min-width: 200px;
+				min-width: 100%;
 				width: fit-content;
 				height: auto;
 				background-color: white;
