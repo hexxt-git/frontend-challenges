@@ -28,12 +28,15 @@ h1 {
 	letter-spacing: -7px;
 	white-space: nowrap;
 	text-align: center;
-	color: white;
-	text-shadow: #fff2 0 20px 40px;
+	text-shadow: #fff3 0 20px 40px;
 	position: relative;
 	box-sizing: border-box;
 	padding: 0 30px;
 	user-select: none;
+	background: url('./assets/background.jpg') no-repeat center center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 #container {
 	width: 100%;
@@ -75,13 +78,13 @@ h1 {
 			top: 0;
 			left: 0;
 			transition: filter 800ms ease-out;
-			filter: grayscale(0.5) brightness(0.8);
+			filter: grayscale(0.2) brightness(0.9);
 			z-index: -2;
 			border-radius: inherit;
 		}
 		&:hover {
 			img {
-				filter: grayscale(0.1) brightness(1);
+				filter: grayscale(0) brightness(1);
 			}
 			&::after {
 				backdrop-filter: blur(30px) brightness(0.8);
